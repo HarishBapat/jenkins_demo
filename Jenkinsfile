@@ -20,7 +20,7 @@ pipeline {
         stage('Run Container') {
             steps {
                 script {
-                    sh "docker run -d -p 8081:80 --name httpd-container ${DOCKER_IMAGE}:${DOCKER_TAG}"
+                    sh "docker run -d -p 8081:80 --name httpd-harish ${DOCKER_IMAGE}:${DOCKER_TAG}"
                 }
             }
         }
